@@ -12,3 +12,9 @@ $('#btGerarPDF').click(function () {
     });
     doc.save('exemplo-pdf.pdf');
 });
+
+
+
+Gera PDF por Lucas Arruda
+
+http://jsfiddle.net/felipe_douradinho/5r4ra6na/1/
