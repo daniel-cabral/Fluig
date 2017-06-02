@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Aprova&ccedil;&atilde;o Solicita&ccedil;&atilde;o de Compra</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" rel="stylesheet" href="http://mk.farmax.com.br:8080/portal/resources/style-guide/css/fluig-style-guide.min.css"/>
+        <script type="text/javascript" src="http://mk.farmax.com.br:8080/portal/resources/js/jquery/jquery.js"></script>
+        <script type="text/javascript" src="http://mk.farmax.com.br:8080/portal/resources/js/jquery/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="http://mk.farmax.com.br:8080/portal/resources/js/mustache/mustache-min.js"></script>
+        <script type="text/javascript" src="http://mk.farmax.com.br:8080/portal/resources/style-guide/js/fluig-style-guide.min.js" charset="utf-8"></script>
+    </head>
+    <body>
+        <div class="fluig-style-guide">
+            <form name="form" role="form">
+                <div class="panel panel-default">
+                    <!-- Default panel contents -->
+                    <div class="panel-heading">Dados da Solicita&ccedil;&atilde;o</div>
+
+                    <div class="panel-body">
+                        <div class="form-group col-md-3 col-lg-2 col-sm-4 col-xs-6">
+                        <label for="C1_NUM">N&uacute;mero da SC<span class="required text-danger"><strong>*</strong></span></label>
+                        <input type="text" readonly="readonly" class="form-control" id="C1_NUM" name="C1_NUM" />
+                    </div>
+                    <div class="form-group col-md-3 col-lg-2 col-sm-4 col-xs-6">
+                        <label for="C1_EMISSAO">Dt Emissao<span class="required text-danger"><strong>*</strong></span></label>
+                        <input type="text" readonly="readonly"  required class="form-control" id="C1_EMISSAO" name="C1_EMISSAO" />
+                    </div>                        
+                    <div class="form-group col-md-3 col-lg-2 col-sm-4 col-xs-4">
+                        <label for="C1_CC">Centro Custo<span class="required text-danger"><strong>*</strong></span></label>
+                        <input type="text" readonly="readonly"  required class="form-control" id="C1_CC" name="C1_CC" />
+                    </div>
+                    <div class="form-group col-md-12 col-lg-6 col-sm-12 col-xs-8">
+                        <label for="C1_SOLICIT">Solicitante<span class="required text-danger"><strong>*</strong></span></label>
+                        <input type="text" readonly="readonly"  required class="form-control" id="C1_SOLICIT" name="C1_SOLICIT" />
+                    </div>
+					<div class="form-group col-md-12 col-lg-6 col-sm-12 col-xs-8 hidden">
+                        <label for="C1_NOMAPRO" type="hidden">Aprovador<span class="required text-danger"><strong>*</strong></span></label>
+                        <input type="hidden" readonly="readonly"  required class="form-control" id="C1_NOMAPRO" name="C1_NOMAPRO" />
+                    </div>
+                    <div class="form-group col-md-12 col-lg-6 col-sm-12 col-xs-8 hidden">
+                        <label for="C1_MATAPRO" type="hidden">Matricula do Aprovador<span class="required text-danger"><strong>*</strong></span></label>
+                        <input type="hidden" readonly="readonly" disabled="disabled" required class="form-control" id="C1_MATAPRO" name="C1_MATAPRO" />
+                    </div>
+                    <div class="form-group col-md-6 col-lg-4 col-sm-4 col-xs-4 hidden">
+			        <label for="EMPRESA" ">Matricula Aprovador<span class="required text-danger"><strong>*</strong></span></label>
+			        <input type="hidden" readonly="readonly"  required class="form-control" id="EMPRESA" name="EMPRESA" />
+			        </div>
+			        <div class="form-group col-md-6 col-lg-4 col-sm-4 col-xs-4 hidden">
+			        <label for="FILIAL" ">Matricula Aprovador<span class="required text-danger"><strong>*</strong></span></label>
+			        <input type="hidden" readonly="readonly"  required class="form-control" id="FILIAL" name="FILIAL" />
+			        </div>
+                    </div>
+
+
+                </div>
+
+
+                <div class="panel panel-default">
+                    <!-- Default panel contents -->
+                    <div class="panel-heading">Itens da Solicita&ccedil;&atilde;o</div>
+                    <div class="panel-body">
+                        <!-- Table -->
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 table-responsive">
+                                <table tablename="tabela_itens" nodeletebutton=true noaddbutton=true class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Item</th>
+                                            <th>Produto</th>
+                                            <th>Descri&ccedil;&atilde;o</th>
+                                            <th>Un. Medida</th>
+                                            <th>Quantidade</th>
+                                            <th>Data Prevista</th>
+                                            <th>Observa&ccedil;&atilde;o</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td><input type="text" name="C1_ITEM" id="C1_ITEM" readonly="readonly" disabled="disabled" /></td>
+                                        <td><input type="text" name="C1_PRODUTO" id="C1_PRODUTO" readonly="readonly" disabled="disabled" /></td>
+                                        <td><input type="text" name="C1_DESCRI" id="C1_PRODUTO" readonly="readonly" disabled="disabled" /></td>
+                                        <td><input type="text" name="C1_UM" id="C1_UM" readonly="readonly" disabled="disabled" /></td>
+                                        <td><input type="text" name="C1_QUANT" id="C1_QUANT" readonly="readonly" disabled="disabled" /></td>
+                                        <td><input type="text" name="C1_DATPRF" id="C1_DATPRF" readonly="readonly" disabled="disabled" /></td>
+                                        <td><input type="text" name="C1_OBS" id="C1_OBS" readonly="readonly" disabled="disabled" /></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </form>            
+        </div>
+    </body>
+</html>

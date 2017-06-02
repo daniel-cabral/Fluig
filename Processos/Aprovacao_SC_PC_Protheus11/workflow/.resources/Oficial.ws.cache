@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.8.0_66" class="java.beans.XMLDecoder">
+ <object class="java.util.HashMap">
+  <void method="put">
+   <string>volume</string>
+   <array class="java.lang.String" length="1">
+    <void index="0">
+     <string>Default</string>
+    </void>
+   </array>
+  </void>
+  <void method="put">
+   <string>camposFormulario, documentoId = 1949</string>
+   <array class="java.lang.String" length="25">
+    <void index="0">
+     <string>APROVADOR</string>
+    </void>
+    <void index="1">
+     <string>CCUSTO</string>
+    </void>
+    <void index="2">
+     <string>COMPRADOR</string>
+    </void>
+    <void index="3">
+     <string>EMAILAPROVADOR</string>
+    </void>
+    <void index="4">
+     <string>EMISSAO</string>
+    </void>
+    <void index="5">
+     <string>EMPRESA</string>
+    </void>
+    <void index="6">
+     <string>FILIAL</string>
+    </void>
+    <void index="7">
+     <string>FORNECEDOR</string>
+    </void>
+    <void index="8">
+     <string>it_codigo</string>
+    </void>
+    <void index="9">
+     <string>it_descricao</string>
+    </void>
+    <void index="10">
+     <string>it_entrega</string>
+    </void>
+    <void index="11">
+     <string>it_item</string>
+    </void>
+    <void index="12">
+     <string>it_obs</string>
+    </void>
+    <void index="13">
+     <string>it_preco</string>
+    </void>
+    <void index="14">
+     <string>it_quant</string>
+    </void>
+    <void index="15">
+     <string>it_total</string>
+    </void>
+    <void index="16">
+     <string>it_unid</string>
+    </void>
+    <void index="17">
+     <string>lb_cond</string>
+    </void>
+    <void index="18">
+     <string>lb_nome</string>
+    </void>
+    <void index="19">
+     <string>lbFrete</string>
+    </void>
+    <void index="20">
+     <string>lbTotal</string>
+    </void>
+    <void index="21">
+     <string>lbValor</string>
+    </void>
+    <void index="22">
+     <string>MATAPROVADOR</string>
+    </void>
+    <void index="23">
+     <string>PEDIDO</string>
+    </void>
+    <void index="24">
+     <string>solicitante</string>
+    </void>
+   </array>
+  </void>
+  <void method="put">
+   <string>expediente</string>
+   <array class="java.lang.String" length="1">
+    <void index="0">
+     <string>Default</string>
+    </void>
+   </array>
+  </void>
+  <void method="put">
+   <string>processosServidor</string>
+   <object class="java.util.ArrayList">
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.ProcessDefinitionDto">
+      <void property="companyId">
+       <int>1</int>
+      </void>
+      <void property="processDescription">
+       <string>Agendamento de Visita</string>
+      </void>
+      <void property="processId">
+       <string>agendamento_visitante</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.ProcessDefinitionDto">
+      <void property="companyId">
+       <int>1</int>
+      </void>
+      <void property="processDescription">
+       <string>Aprovação de Pedido de Compra</string>
+      </void>
+      <void property="processId">
+       <string>aprovacao_pc</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.ProcessDefinitionDto">
+      <void property="companyId">
+       <int>1</int>
+      </void>
+      <void property="processDescription">
+       <string>Aprovação de Solicitação de Compra</string>
+      </void>
+      <void property="processId">
+       <string>aprovacao_sc</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.ProcessDefinitionDto">
+      <void property="companyId">
+       <int>1</int>
+      </void>
+      <void property="processDescription">
+       <string>Cenário de Atualização</string>
+      </void>
+      <void property="processId">
+       <string>Cenário de Atualização</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.ProcessDefinitionDto">
+      <void property="companyId">
+       <int>1</int>
+      </void>
+      <void property="processDescription">
+       <string>Eliminação de Resíduo</string>
+      </void>
+      <void property="processId">
+       <string>compras_resíduo</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.ProcessDefinitionDto">
+      <void property="companyId">
+       <int>1</int>
+      </void>
+      <void property="processDescription">
+       <string>Troca de Turno</string>
+      </void>
+      <void property="processId">
+       <string>DP_Troca_Turno</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.ProcessDefinitionDto">
+      <void property="companyId">
+       <int>1</int>
+      </void>
+      <void property="processDescription">
+       <string>Requisições de Exceção de Jornada (saídas, atrasos, etc)</string>
+      </void>
+      <void property="processId">
+       <string>Exceção de Jornada</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.ProcessDefinitionDto">
+      <void property="companyId">
+       <int>1</int>
+      </void>
+      <void property="processDescription">
+       <string>Listar Tarefas</string>
+      </void>
+      <void property="processId">
+       <string>FLUIGADHOC</string>
+      </void>
+     </object>
+    </void>
+   </object>
+  </void>
+  <void method="put">
+   <string>mecanismoPapel</string>
+   <object class="java.util.ArrayList">
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>admin</string>
+      </void>
+      <void property="roleId">
+       <string>admin</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>Gerentes de TI</string>
+      </void>
+      <void property="roleId">
+       <string>TI_GERENTE</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>Usuários do DP que cadastram exceções de acesso no TSA</string>
+      </void>
+      <void property="roleId">
+       <string>DP_Libera_excecao_acesso</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>Supervisores, Gerentes e Diretores - para vários processos</string>
+      </void>
+      <void property="roleId">
+       <string>Lideres</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>Analistas de Negócio (TI)</string>
+      </void>
+      <void property="roleId">
+       <string>TI_analistas_negocio</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>Desenvolvedores do TI</string>
+      </void>
+      <void property="roleId">
+       <string>TI_desenvolvedor</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>Usuário(s) da recepção que cadastram e liberam visitantes no TSA</string>
+      </void>
+      <void property="roleId">
+       <string>RECEPCAO_cadastra_visitante</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>Cadastrantes de provisão no Contas à Pagar</string>
+      </void>
+      <void property="roleId">
+       <string>PAGAR_cadastraprovisao</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>Usuários do Compras que solicitam provisionamento</string>
+      </void>
+      <void property="roleId">
+       <string>COMPRAS_solicitaprovisao</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>DP - usuários habilitados a avaliar e trocar turno de funcionários</string>
+      </void>
+      <void property="roleId">
+       <string>DP_mudanca_turno</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>Colaboradores do RH que cadastram visitas</string>
+      </void>
+      <void property="roleId">
+       <string>Visitantes_RH</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>Colaboradores do DP que cadastram visitantes</string>
+      </void>
+      <void property="roleId">
+       <string>Visitantes_DP</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>Colaboradores do Compras que cadastram visitas de fornecedores</string>
+      </void>
+      <void property="roleId">
+       <string>Visitantes_Compras</string>
+      </void>
+     </object>
+    </void>
+   </object>
+  </void>
+  <void method="put">
+   <string>mecanismo</string>
+   <array class="[Ljava.lang.Object;" length="9">
+    <void index="0">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>Atribuição por Associação</string>
+      </void>
+      <void index="1">
+       <string>Associado</string>
+      </void>
+     </array>
+    </void>
+    <void index="1">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>Atribuição por Campo de Formulário</string>
+      </void>
+      <void index="1">
+       <string>Campo Formulário</string>
+      </void>
+     </array>
+    </void>
+    <void index="2">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>Atribuição por Executor de Atividade</string>
+      </void>
+      <void index="1">
+       <string>Executor Atividade</string>
+      </void>
+     </array>
+    </void>
+    <void index="3">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>Atribuição por Grupo</string>
+      </void>
+      <void index="1">
+       <string>Grupo</string>
+      </void>
+     </array>
+    </void>
+    <void index="4">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>Atribuição por Grupos do Colaborador</string>
+      </void>
+      <void index="1">
+       <string>Grupos Colaborador</string>
+      </void>
+     </array>
+    </void>
+    <void index="5">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>Atribuição por Papel</string>
+      </void>
+      <void index="1">
+       <string>Papel</string>
+      </void>
+     </array>
+    </void>
+    <void index="6">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>Atribuição para um Grupo</string>
+      </void>
+      <void index="1">
+       <string>Pool Grupo</string>
+      </void>
+     </array>
+    </void>
+    <void index="7">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>Atribuição para um Papel</string>
+      </void>
+      <void index="1">
+       <string>Pool Papel</string>
+      </void>
+     </array>
+    </void>
+    <void index="8">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>Atribuição por Usuário</string>
+      </void>
+      <void index="1">
+       <string>Usuário</string>
+      </void>
+     </array>
+    </void>
+   </array>
+  </void>
+  <void method="put">
+   <string>camposFormulario, documentoId = 1950</string>
+   <array class="java.lang.String" length="15">
+    <void index="0">
+     <string>C1_CC</string>
+    </void>
+    <void index="1">
+     <string>C1_DATPRF</string>
+    </void>
+    <void index="2">
+     <string>C1_DESCRI</string>
+    </void>
+    <void index="3">
+     <string>C1_EMISSAO</string>
+    </void>
+    <void index="4">
+     <string>C1_ITEM</string>
+    </void>
+    <void index="5">
+     <string>C1_MATAPRO</string>
+    </void>
+    <void index="6">
+     <string>C1_NOMAPRO</string>
+    </void>
+    <void index="7">
+     <string>C1_NUM</string>
+    </void>
+    <void index="8">
+     <string>C1_OBS</string>
+    </void>
+    <void index="9">
+     <string>C1_PRODUTO</string>
+    </void>
+    <void index="10">
+     <string>C1_QUANT</string>
+    </void>
+    <void index="11">
+     <string>C1_SOLICIT</string>
+    </void>
+    <void index="12">
+     <string>C1_UM</string>
+    </void>
+    <void index="13">
+     <string>EMPRESA</string>
+    </void>
+    <void index="14">
+     <string>FILIAL</string>
+    </void>
+   </array>
+  </void>
+ </object>
+</java>
