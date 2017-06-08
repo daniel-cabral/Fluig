@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link type="text/css" rel="stylesheet" href="http://fluighml.totvsrs.com.br:8080/portal/resources/style-guide/css/fluig-style-guide.min.css"/>
+  <script type="text/javascript" src="http://fluighml.totvsrs.com.br:8080/portal/resources/js/jquery/jquery.js"></script>
+  <script type="text/javascript" src="http://fluighml.totvsrs.com.br:8080/portal/resources/js/jquery/jquery-ui.min.js"></script>
+  <script src="http://fluighml.totvsrs.com.br:8080/portal/resources/js/mustache/mustache-min.js"></script>
+  <script type="text/javascript" src="http://fluighml.totvsrs.com.br:8080/portal/resources/style-guide/js/fluig-style-guide.min.js" charset="utf-8"></script>
+
+  <script src="hmac-sha1.js" type="text/javascript"></script>
+  <script src="hmac-sha256.js" type="text/javascript"></script>
+  <script src="enc-base64-min.js" type="text/javascript"></script>
+  <script src="oauth-1.0a.js" type="text/javascript"></script>
+  <script src="FluigAPI.js" type="text/javascript"></script>
+  <script src="main.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="fluig-style-guide">
+
+	<div class="form-group">
+		<label class="control-label" for="colleagueName">Nome do Colleague:</label>
+		<input type="text" class="form-control" name="colleagueName" id="colleagueName">
+	</div>
+	<button class="btn btn-primary" onclick="searchColleague();">Buscar</button>
+
+	<hr>
+
+	<div class="form-group">
+		<label class="control-label" for="colleagueId">Colleague Id:</label>
+		<input type="text" class="form-control" name="colleagueId" id="colleagueId" readonly="true">
+	</div>
+	<div class="form-group">
+		<label class="control-label" for="mail">Email do Colleague:</label>
+		<input type="text" class="form-control" name="mail" id="mail" readonly="true">
+	</div>
+
+</div>
+</body>
+</html>
