@@ -1,0 +1,53 @@
+HTML
+====
+<div class="col-sm-2">
+	<label for="eNewVtLinha">Código</label>
+	<div class="input-group">
+		<input type="text" name="eNewVtLinha" id="eNewVtLinha" class="form-control" readonly>
+		<input type="hidden" name="eNewVtLinhaCodigo" id="eNewVtLinhaCodigo">
+		<div class="input-group-addon fs-cursor-pointer" onclick="Admissao.zoomValeTransporteLinha(this);">
+			<span class="fluigicon fluigicon-search"></span>
+		</div>
+	</div>
+</div>
+
+JS
+==
+var Admissao = {
+	zoomValeTransporteLinha: function(element) {
+		var elementIndex = $(element).parent().find('input[id^=eNewVtLinhaCodigo]').attr('id').split('___')[1];
+		var ffdSecaoColigadaCodigo = $('#ffdSecaoColigadaCodigo').val();
+
+		if (ffdSecaoColigadaCodigo != '') {
+			MBPM.Processo.utils.zoomFormulario('ds_rm_global_valetransporte_linha',
+				'CODIGOVT,CODIGOVT,NOMELINHAVT,NOMELINHAVT,VALORVT,VALORVT',
+				'CODIGOVT,NOMELINHAVT,VALORVT',
+				'CODCOLIGADA,' + ffdSecaoColigadaCodigo,
+				'tZoomValeTransporteLinha___' + elementIndex,
+				'Linha do Vale Transporte');
+		}
+		else {
+			Admissao.zoomToastSecaoColigada();
+		}
+	}
+}
+
+function setSelectedZoomItem(selectedItem) {
+	var index = selectedItem.type.split('___')[1];
+
+	if (index !== undefined && index != '') {
+		if (selectedItem.type == 'tZoomValeTransporteLinha___' + index) {
+			$('#eNewVtLinha___' + index).val(selectedItem.CODIGOVT + ' - ' + selectedItem.NOMELINHAVT);
+			$('#eNewVtLinhaCodigo___' + index).val(selectedItem.CODIGOVT);
+			$('#eNewVtLinhaDescricao___' + index).val(selectedItem.NOMELINHAVT);
+			$('#eNewVtLinhaTarifa___' + index).val(selectedItem.VALORVT);
+		}
+	}
+	else {
+		if (selectedItem.type == 'tZoomAssistenciaMedica_ffdMedica') {
+			$('#ffdMedica').val(selectedItem.CODASSISTMED + ' - ' + selectedItem.NOMEASSISTMED);
+			$('#ffdMedicaCodigo').val(selectedItem.CODASSISTMED);
+			$('#ffdMedicaDescricao').val(selectedItem.NOMEASSISTMED);
+		}
+	}
+}
